@@ -92,5 +92,5 @@ def candiate_data(request, *args, **kwargs):
         candidate_tweets = get_tweets(candidate)
         if candidate_tweets:
             candidate.update(candidate_tweets)
-        candidates.append(candidate)
+            candidates.append(candidate)
     return JsonResponse({"candidates": candidates})
